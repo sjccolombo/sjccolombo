@@ -71,6 +71,7 @@ No. 214, T.B. Jayah Mawatha, Colombo 10, Sri Lanka.
 
 ### LINKS
 
+- Dicebear Avatars - https://editor.dicebear.com
 - Way Back Machine - https://web.archive.org/web/20180221005208/http://stjosephscollege.lk
 - Wikipedia - https://en.wikipedia.org/wiki/St._Joseph's_College,_Colombo
 - Facebook - https://www.facebook.com/MediaSJC
