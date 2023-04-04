@@ -42,7 +42,9 @@
     - Prefects' Body
 - Activities
     - Societies
+        - Altar Servers' Union - Green Earth Club - Legion of Mary - St. Vincent de Paul Society - Cadets - Gulid of Immaculate Heart of Mary - St. Cecilia's Choir - Commerce Union - ICT Society - Media Circle - Tamil Literary Union - Cub Scouting - Interact Club - Oriental Band - United Nations Youth Association - English Debating Union - Jesus Youth Movement - Scouts - Western Band - English Literary Union - Josephian Bible Society - Sinhala Literary Union - Young Catholic Students Movement
     - Sports
+        - Swimming - Diving - Cricket - Rowing - Wushu - Athletics - Rugby - Badminton - Squash - Basketball - Football - Boxing - Hockey - Taekwondo - Chess - Karate - Tennis
 - Gallery
     - Photos
     - Videos
