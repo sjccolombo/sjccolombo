@@ -1,4 +1,4 @@
-### STRUCTURE
+## STRUCTURE
 
 - Home
 - Academics
@@ -62,14 +62,38 @@
 
 <hr>
 
-### ADDRESS
+## College Anthem
+
+Fruits of virtue and knowledge Here we gather, peace and power Symbolished in yonder banner Floating o'er St. Joseph's tower White and blue its mystic colors Harmonizing strong and clear Stolen from the distant mountains From the wild waves breaking near From the wild waves breaking near, Harmonizing strong and clear White and Blue our mystic colors Till the mountains disappear.
+
+Where the peerless Pearl of Indies Hides Its glow on ocean's breast White and Blue is nature's setting To the gem she loves the best Closely clasped by silv'ry breakers Fretted from the flowing tide Round it heave the swelling billows Rolling blue o'er waters wide Fretted from the flowing tide Rolling blue o'er waters wide Fretted breakers, swelling billows White and Blue, the Ocean's pride.
+
+Where the Ard-righ of the mountains Gaurisanker, proudly reigns Round his throne a thousand vassals Fearless guardians of the plains Thunder back their monarch's greeting 'neath his canopy of blue Lightning-darts their quivers keeping Shining white their armours hue 'Neath his canopy of blue shining white their armours hue Snow-clad peak and bended heavens Keep aloft the White and Blue.
+
+Where our Lady, Queen of Heaven Deigned on earth to reappear In the grotto o'er the torrent from the mountains rising near, White and Blue her robe and girdle Lily white her mantle too Then we'll wear Our Lady's colours Dear St. Joseph's White and Blue Then Hurrah for White and Blue Then Hurrah for White and Blue, Still we'll wear Our Lady's colours Dear St. Joseph's White and Blue.
+
+<hr>
+
+## Vision
+
+Guided by the life, the teaching and example of our Lord Jesus Christ and inspired by the Josephian Motto - 'Through knowledge to virtue' , we are conscious of our mission to serve the the people of God.
+
+<hr>
+
+## Mission
+
+To achieve excellence in education, by making the college one of Sri Lanka's. best educational institutions, by fostering education which promotes spiritual and human values, thus producing good citizens, who have the knowledge, skills and aptitudes to serve the community in the public and private sector, in the professions and in self employment.
+
+<hr>
+
+## ADDRESS
 
 St. Joseph's College, <br>
 No. 214, T.B. Jayah Mawatha, Colombo 10, Sri Lanka.
 
 <hr>
 
-### LINKS
+## LINKS
 
 - Dicebear Avatars - https://editor.dicebear.com
 - Way Back Machine - https://web.archive.org/web/20180221005208/http://stjosephscollege.lk
