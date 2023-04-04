@@ -37,6 +37,16 @@
             - 13c1 - 13c2 - 13c3 - 13c4 - 13c5
     - London Advanced Level
 - About Us
+    - College Patron Saint
+    - History
+    - Rectors
+    - Staff
+    - The Model Josephian
+    - College Flag
+    - College Emblem
+    - College Anthem
+    - Houses
+    - Notable Alumni
 - Life at Joes
     - Facilities
     - Prefects' Body
