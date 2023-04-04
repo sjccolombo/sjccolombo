@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.nav-bar{
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 10vh;
+	color: #fff;
+	background: #1e4466;
+}
+
+.header{
+	margin: 10vh 0px 0px 0px;
+	height: 100vh;
+	color: #fff;
+	background: #0e0e0e;
+}
+
+.sub-header{
+	height: 80vh;
+	color: #fff;
+	background: #595959;
+}
+
+.news-section{
+	height: 80vh;
+	color: #fff;
+	background: #ba2f16;
+}
+
+.details-section{
+	height: 40vh;
+	color: #fff;
+	background: #b91768;
+}
+
+.footer{
+	height: 10vh;
+	color: #fff;
+	background: #0e0e0e;
+}
