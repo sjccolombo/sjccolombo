@@ -36,17 +36,6 @@
             - 12c1 - 12c2 - 12c3 - 12c4 - 12c5
             - 13c1 - 13c2 - 13c3 - 13c4 - 13c5
     - London Advanced Level
-- About Us
-    - College Patron Saint
-    - History
-    - Rectors
-    - Staff
-    - The Model Josephian
-    - College Flag
-    - College Emblem
-    - College Anthem
-    - Houses
-    - Notable Alumni
 - Life at Joes
     - Facilities
     - Prefects' Body
@@ -58,6 +47,17 @@
 - Gallery
     - Photos
     - Videos
+- About Us
+    - College Patron Saint
+    - History
+    - Rectors
+    - Staff
+    - The Model Josephian
+    - College Flag
+    - College Emblem
+    - College Anthem
+    - Houses
+    - Notable Alumni
 - Contact (Header -> Map -> Form -> Footer)
 
 <hr>
@@ -71,6 +71,7 @@ No. 214, T.B. Jayah Mawatha, Colombo 10, Sri Lanka.
 
 ### LINKS
 
+- Way Back Machine - https://web.archive.org/web/20180221005208/http://stjosephscollege.lk
 - Wikipedia - https://en.wikipedia.org/wiki/St._Joseph's_College,_Colombo
 - Facebook - https://www.facebook.com/MediaSJC
 - YouTube - https://www.youtube.com/@StJosephsCollegeColombo10
