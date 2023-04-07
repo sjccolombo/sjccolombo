@@ -1,69 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	font-family: 'Nunito', sans-serif;
 }
 
+html{
+	color: #fff;
+	background: #0e0e0e;
+	scroll-behavior: smooth;
+}
+
 /* SCROLLBAR PROPERTIES START ========================================= */
 * {
 	/* For Firefox */
-  scrollbar-width: thin;
+	scrollbar-width: thin;
 }
+
 *::-webkit-scrollbar {
-  width: 7px;
+	width: 7px;
 }
 *::-webkit-scrollbar-track {
-  background: transparent;
+	background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: #ababab;
+	background-color: #ababab;
 }
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #8f8f8f;
+	background-color: #8f8f8f;
 }
 *::-webkit-scrollbar-thumb:active {
 	background-color: #7a7a7a;
 }
 /* =========================================== SCROLLBAR PROPERTIES END */
 
-.nav-bar{
+
+/* NAVBAR PROPERTIES START ============================================ */
+.nav-bar {
 	z-index: 1;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 8vh;
+	height: 10vh;
 	color: #fff;
-	background: #1e4466;
+	background: #1e44666d;
+	text-transform: uppercase;
+	backdrop-filter: blur(10px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.header{
-	margin: 8vh 0px 0px 0px;
-	height: 92vh;
+.nav-bar .activepage{
+	color: #0e0e0e;
+	background: #fff;
+	border-bottom: 3px solid #1e75c2;
+	border-radius: 5px;
+}
+.nav-bar .activepage:hover{
+	text-shadow: none;
+}
+
+.nav-bar button{
+	color: #fff;
+	background: transparent;
+	font-size: small;
+	border: none;
+	padding: 5px 20px;
+	margin: 0px 5px 3px 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.nav-bar button:hover{
+	color: #0e0e0e;
+	background: #fff;
+}
+
+.nav-container{
+	width: 95%;
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-logo{
+	position: relative;
+	left: 0;
+}
+.nav-logo img{
+	height: 40px;
+}
+.nav-menu{
+	position: relative;
+	right: 0;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+.dropdown-content {
+	font-size: small;
+	display: none;
+	position: absolute;
+	width: 180%;
+	overflow: hidden;
+	margin-left: 5px;
+	border-radius: 5px 5px;
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.249);
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown-content a {
+	color: #fff;
+	background: #1e4466;
+	border-bottom: 3px solid #1e75c2;
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+.dropdown-content a:last-child {
+	border-bottom: none;
+}
+
+.dropdown-content a:hover {
+	color: #1e4466;
+	background: #fff;
+	transition: 0.5s;
+}
+/* ============================================== NAVBAR PROPERTIES END */
+
+
+.header {
+	height: 100vh;
 	color: #fff;
 	background: #0e0e0e;
 }
 
-.sub-header{
+.sub-header {
 	height: 80vh;
 	color: #fff;
 	background: #595959;
 }
 
-.news-section{
+.news-section {
 	height: 80vh;
 	color: #fff;
 	background: #ba2f16;
 }
 
-.details-section{
+.details-section {
 	height: 40vh;
 	color: #fff;
 	background: #b91768;
 }
 
-.footer{
+.footer {
 	height: 10vh;
 	color: #fff;
 	background: #0e0e0e;
