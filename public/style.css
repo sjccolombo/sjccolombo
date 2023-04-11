@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@font-face {
+	font-family: "Helvetica NDM";
+	src: url("https://github.com/sjccolombo/sjc-storage/blob/main/Fonts/HelveticaNowDisplay-Medium.ttf") format("truetype");
+}
 
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Helvetica NDM', sans-serif;
 }
 
 html{
@@ -135,32 +138,86 @@ html{
 /* ============================================== NAVBAR PROPERTIES END */
 
 
+/* HEADER PROPERTIES START ============================================ */
 .header {
 	height: 100vh;
 	color: #fff;
-	background: #0e0e0e;
+	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Banners/banner.webp');
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
 }
+.header-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 60%;
+	width: 85%;
+}
+.header-container .title{
+	letter-spacing: -2px;
+	font-size: xxx-large;
+	margin-bottom: 6px;
+}
+.header-container .sub-title{
+	letter-spacing: -1px;
+	font-size: xx-large;
+	margin-bottom: 45px;
+}
+.header-container button {
+	color: #fff;
+	background: #1353b4;
+	font-size: medium;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 25px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.header-container button:hover {
+	color: #0e0e0e;
+	background: #fff;
+	transition: 0.5s;
+}
+/* ============================================== HEADER PROPERTIES END */
 
+
+/* SUB-HEADER START =================================================== */
 .sub-header {
 	height: 80vh;
 	color: #fff;
 	background: #595959;
 }
+/* ===================================================== SUB-HEADER END */
 
+
+/* NEWS-SECTION START ================================================= */
 .news-section {
 	height: 80vh;
 	color: #fff;
 	background: #ba2f16;
 }
+/* =================================================== NEWS-SECTION END */
 
+
+/* DETAILS-SECTION START ============================================== */
 .details-section {
 	height: 40vh;
 	color: #fff;
 	background: #b91768;
 }
+/* ================================================ DETAILS-SECTION END */
 
+
+/* FOOTER START ======================================================= */
 .footer {
 	height: 10vh;
 	color: #fff;
 	background: #0e0e0e;
 }
+/* FOOTER END ========================================================= */
