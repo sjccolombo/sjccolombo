@@ -9,11 +9,38 @@
 	font-family: 'Helvetica NDM', sans-serif;
 }
 
-html{
+html {
 	color: #fff;
-	background: #0e0e0e;
+	background: #1e4466;
 	scroll-behavior: smooth;
 }
+
+.hr-container{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 30px 0px;
+}
+hr{
+	border: 2px solid #1e75c2;
+	border-radius: 2px;
+	width: 10%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+
+a {
+	color: #fff;
+}
+
+p {
+	font-size: large;
+	line-height: 1.8;
+}
+
 
 /* SCROLLBAR PROPERTIES START ========================================= */
 * {
@@ -138,6 +165,7 @@ html{
 /* ============================================== NAVBAR PROPERTIES END */
 
 
+/* HOME PAGE ======================================================================================== */
 /* HEADER PROPERTIES START ============================================ */
 .header {
 	height: 100vh;
@@ -147,7 +175,6 @@ html{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-transform: uppercase;
 }
 .header-container {
 	display: flex;
@@ -170,7 +197,7 @@ html{
 }
 .header-container button {
 	color: #fff;
-	background: #1353b4;
+	background: #1e4466;
 	font-size: medium;
 	text-transform: uppercase;
 	border: none;
@@ -182,6 +209,7 @@ html{
 .header-container button:hover {
 	color: #0e0e0e;
 	background: #fff;
+	scale: 1.05;
 	transition: 0.5s;
 }
 /* ============================================== HEADER PROPERTIES END */
@@ -189,35 +217,246 @@ html{
 
 /* SUB-HEADER START =================================================== */
 .sub-header {
-	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 	color: #fff;
-	background: #595959;
+}
+.sub-header-container{
+	text-align: center;
+	height: auto;
+	width: 95%;
+}
+.sub-header-container h1{
+	font-size: medium;
+	margin-bottom: 5px;
+}
+.sub-header-container h2{
+	font-size: xx-large;
+}
+.sub-header-container p{
+	text-align: justify;
+	text-align-last: center;
+	margin: 30px 0px 30px 0px;
 }
 /* ===================================================== SUB-HEADER END */
 
 
+/* ACADEMICS-SECTION START ============================================ */
+.academics-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	padding: 35px 20px;
+	color: #fff;
+	background: #1e4466;
+}
+.academics-section-container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	width: 100%;
+	height: auto;
+}
+.academics-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 20px;
+	margin: 10px;
+	width: 35%;
+	height: 300px;
+	border-radius: 5px;
+	color: #ececec;
+	background: #142d44;
+	box-shadow: 0 0 50px #1e4466;
+	transition: 0.3s;
+}
+.academics-card:hover{
+	box-shadow: 0 0 50px #2c6292;
+	transition: 0.3s;
+}
+#primary{
+	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/primary.webp');
+	background-size: cover;
+}
+#middle{
+	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/middle.webp');
+	background-size: cover;
+}
+#upper{
+	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/upper.webp');
+	background-size: cover;
+}
+#ordinary{
+	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/ordinary.webp');
+	background-size: cover;
+}
+#advanced{
+	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/advanced.webp');
+	background-size: cover;
+}
+
+.academics-card button {
+	color: #fff;
+	background: #1e4466;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	margin: 15px;
+	padding: 10px 15px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.academics-card button:hover {
+	color: #0e0e0e;
+	background: #fff;
+	scale: 1.05;
+	transition: 0.5s;
+}
+/* ============================================== ACADEMICS-SECTION END */
+
+
 /* NEWS-SECTION START ================================================= */
 .news-section {
-	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	padding: 35px 20px;
 	color: #fff;
-	background: #ba2f16;
+	background: #1e4466;
+}
+.news-container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	width: 100%;
+	height: auto;
+}
+.news-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 20px;
+	margin: 10px;
+	width: 45%;
+	height: auto;
+	border-radius: 5px;
+	color: #ececec;
+	background: #142d44;
+}
+.news-card h3{
+	margin: 20px;
+}
+.news-card img{
+	border-radius: 5px;
+	margin-bottom: 20px;
+	width: 90%;
+}
+.news-card p{
+	width: 90%;
+	padding: 10px 0px 15px 0px;
+	text-align: justify;
+	text-align-last: center;
+}
+
+.news-info-container{
+	height: auto;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.news-info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.news-info h5{
+	margin: 0px 15px 0px 15px;
 }
 /* =================================================== NEWS-SECTION END */
 
 
 /* DETAILS-SECTION START ============================================== */
 .details-section {
-	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
 	color: #fff;
-	background: #b91768;
+	background: #142d44;
+}
+.details-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 95%;
+	height: auto;
+}
+.details-container h1{
+	margin: 10px 0px 25px 0px;
+}
+
+.sm-container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.sm-icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px;
+	font-size: larger;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	background: #1e4466;
+	transition: 0.4s;
+}
+.sm-icon:hover{
+	color: #1e4466;
+	background: #ececec;
+	border: 2px solid #ececec;
+	transition: 0.4s;
 }
 /* ================================================ DETAILS-SECTION END */
 
 
 /* FOOTER START ======================================================= */
 .footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 10vh;
-	color: #fff;
-	background: #0e0e0e;
+	color: #ececec;
+	background: #0b1825;
 }
 /* FOOTER END ========================================================= */
+
+
+
+/* 404 PAGE ========================================================================================= */
