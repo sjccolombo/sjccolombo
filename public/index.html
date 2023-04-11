@@ -26,17 +26,15 @@
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/preview.webp">
 	<!--=================================================================================== Meta Tags End -->
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
 	<link rel="stylesheet" href="style.css">
+	<link rel="preload" href="https://github.com/sjccolombo/sjc-storage/blob/main/Fonts/HelveticaNowDisplay-Medium.ttf" as="font" type="font/ttf" crossorigin />
 	<link rel="icon" href="https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/favicon.png">
 
 </head>
 
 <body>
 
+	<!-- NAVIGATION BAR START ==========================================================-->
 	<div class="nav-bar">
 
 		<div class="nav-container">
@@ -86,14 +84,26 @@
 		</div>
 
 	</div>
+	<!--============================================================ NAVIGATION BAR END -->
 
+	<!-- HEADER START ==================================================================-->
 	<div class="header">
-		Header
-	</div>
+		<div class="header-container">
 
-	<div class="sub-header">
+			<h1 class="title">St. Joseph's College</h1>
+			<h1 class="sub-title">Colombo 10</h1>
+			<button onclick="document.getElementById('sub-header').scrollIntoView();">Explore</button>
+
+		</div>
+	</div>
+	<!--==================================================================== HEADER END -->
+
+
+	<!-- SUB-HEADER START ==============================================================-->
+	<div class="sub-header" id="sub-header">
 		Sub Header
 	</div>
+	<!--================================================================ SUB-HEADER END -->
 
 	<div class="news-section">
 		News Section
