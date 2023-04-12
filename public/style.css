@@ -462,7 +462,7 @@ p {
 /* 404 PAGE ========================================================================================= */
 /* HEADER PROPERTIES START ============================================ */
 .error-header {
-	height: 100vh;
+	height: 90vh;
 	color: #fff;
 	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Banners/banner.webp');
 	background-size: cover;
@@ -476,18 +476,17 @@ p {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	height: 60%;
+	height: auto;
 	width: 85%;
 }
 .error-container .error-title{
-	letter-spacing: -2px;
-	font-size: xxx-large;
-	margin-bottom: 6px;
+	letter-spacing: -15px;
+	font-size: 150px;
 }
 .error-container .error-sub-title{
-	letter-spacing: -1px;
-	font-size: xx-large;
-	margin-bottom: 45px;
+	font-size: larger;
+	text-transform: none;
+	margin-bottom: 30px;
 }
 .error-container button {
 	color: #fff;
