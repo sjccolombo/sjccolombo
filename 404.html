@@ -26,11 +26,11 @@
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/preview.webp">
 	<!--=================================================================================== Meta Tags End -->
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-	
+	<!-- FONTAWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 	<link rel="stylesheet" href="style.css">
+	<link rel="preload" href="https://github.com/sjccolombo/sjc-storage/blob/main/Fonts/HelveticaNowDisplay-Medium.ttf" as="font" type="font/ttf" crossorigin />
 	<link rel="icon" href="https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/favicon.png">
 
 </head>
@@ -48,7 +48,7 @@
 			</div>
 
 			<div class="nav-menu">
-				<button onclick="location.href=''">HOME</button>
+				<button onclick="location.href='https://sjccolombo.sanduwira.repl.co'">HOME</button>
 
 				<div class="dropdown">
 					<button>ACADEMICS</button>
@@ -86,9 +86,56 @@
 		</div>
 
 	</div>
-	
 
-	Page Not Found
+
+	<!-- DETAILS-SECTION START =========================================================-->
+	<div class="details-section">
+		<div class="details-container" id="details-container"></div>
+	</div>
+
+	<script>
+		// Wait for DOM to finish loading before running script
+		document.addEventListener('DOMContentLoaded', () => {
+			// Use fetch to get the JSON data
+			fetch('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/JSON/main/info.json')
+				.then(response => response.json())
+				.then(data => {
+					// Get the container element
+					let container = document.getElementById('details-container');
+					let htmlData = '';
+					// Loop through the data array
+					for (let i = 0; i < data.length; i++) {
+						htmlData += '<h1>Follow Us</h1>';
+						htmlData += '<div class="sm-container">';
+						htmlData += '<a class="sm-icon" href="' + data[i].youtubeLink + '" target="_blank" title="YouTube">';
+						htmlData += '<i class="fa-brands fa-youtube"></i>';
+						htmlData += '</a>';
+						htmlData += '<a class="sm-icon" href="' + data[i].facebookLink + '" target="_blank" title="Facebook">';
+						htmlData += '<i class="fa-brands fa-facebook-f"></i>';
+						htmlData += '</a>';
+						htmlData += '<a class="sm-icon" href="' + data[i].instagramLink + '" target="_blank" title="Instagram">';
+						htmlData += '<i class="fa-brands fa-instagram"></i>';
+						htmlData += '</a>';
+						htmlData += '</div>';
+					}
+					// Insert the HTML into the container
+					container.innerHTML = htmlData;
+				})
+				.catch(error => {
+					console.error(error);
+				});
+		});
+	</script>
+	<!--=========================================================== DETAILS-SECTION END -->
+
+
+	<!-- FOOTER START ==================================================================-->
+	<div class="footer">
+		<div>
+			© <a href="https://github.com/sjccolombo" target="_blank">sjccolombo</a>
+		</div>
+	</div>
+	<!--==================================================================== FOOTER END -->
 
 </body>
 
