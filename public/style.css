@@ -543,3 +543,36 @@ p {
 	transition: 0.5s;
 }
 /* ============================================== HEADER PROPERTIES END */
+
+
+
+/* GALLERY PAGE ===================================================================================== */
+/* GALLERY PROPERTIES START =========================================== */
+.gallery-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+.gallery-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	height: auto;
+}
+iframe{
+	width: 48%;
+	height: 55vh;
+	margin: 10px 15px;
+	border-radius: 10px;
+	box-shadow: 0 0 50px #1e4466;
+	transition: 0.4s;
+}
+iframe:hover{
+	box-shadow: 0 0 50px #2c6292;
+	transition: 0.4s;
+}
+/* ============================================= GALLERY PROPERTIES END */

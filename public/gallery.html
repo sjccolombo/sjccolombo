@@ -86,9 +86,70 @@
 		</div>
 
 	</div>
-	
 
-    Gallery Page
+
+	<!-- GALLERY START =================================================================-->
+	<div class="gallery-section">
+		<h1>Media Gallery</h1>
+		<span class="hr-container">
+			<hr>
+		</span>
+		<div class="gallery-container">
+			<iframe src="https://sjcwalls-fb.sandunwira.repl.co" frameborder="0"></iframe>
+			<iframe src="https://sjcwalls-ig.sandunwira.repl.co" frameborder="0"></iframe>
+		</div>
+	</div>
+	<!--=================================================================== GALLERY END -->
+
+
+	<!-- DETAILS-SECTION START =========================================================-->
+	<div class="details-section">
+		<div class="details-container" id="details-container"></div>
+	</div>
+
+	<script>
+		// Wait for DOM to finish loading before running script
+		document.addEventListener('DOMContentLoaded', () => {
+			// Use fetch to get the JSON data
+			fetch('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/JSON/main/info.json')
+				.then(response => response.json())
+				.then(data => {
+					// Get the container element
+					let container = document.getElementById('details-container');
+					let htmlData = '';
+					// Loop through the data array
+					for (let i = 0; i < data.length; i++) {
+						htmlData += '<h1>Follow Us</h1>';
+						htmlData += '<div class="sm-container">';
+						htmlData += '<a class="sm-icon" href="' + data[i].youtubeLink + '" target="_blank" title="YouTube">';
+						htmlData += '<i class="fa-brands fa-youtube"></i>';
+						htmlData += '</a>';
+						htmlData += '<a class="sm-icon" href="' + data[i].facebookLink + '" target="_blank" title="Facebook">';
+						htmlData += '<i class="fa-brands fa-facebook-f"></i>';
+						htmlData += '</a>';
+						htmlData += '<a class="sm-icon" href="' + data[i].instagramLink + '" target="_blank" title="Instagram">';
+						htmlData += '<i class="fa-brands fa-instagram"></i>';
+						htmlData += '</a>';
+						htmlData += '</div>';
+					}
+					// Insert the HTML into the container
+					container.innerHTML = htmlData;
+				})
+				.catch(error => {
+					console.error(error);
+				});
+		});
+	</script>
+	<!--=========================================================== DETAILS-SECTION END -->
+
+
+	<!-- FOOTER START ==================================================================-->
+	<div class="footer">
+		<div>
+			© <a href="https://github.com/sjccolombo" target="_blank">sjccolombo</a>
+		</div>
+	</div>
+	<!--==================================================================== FOOTER END -->
 
 
 	<!-- SCROLL-TO-TOP START ===========================================================-->
