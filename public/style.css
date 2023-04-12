@@ -358,7 +358,14 @@ p {
 	border-radius: 5px;
 	color: #ececec;
 	background: #142d44;
+	box-shadow: 0 0 50px #1e4466;
+	transition: 0.3s;
 }
+.news-card:hover{
+	box-shadow: 0 0 50px #2c6292;
+	transition: 0.3s;
+}
+
 .news-card h3{
 	margin: 20px;
 }
