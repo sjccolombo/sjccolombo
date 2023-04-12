@@ -176,17 +176,17 @@
 					// Loop through the data array
 					for (let i = 0; i < data.length; i++) {
 						htmlData += '<div class="news-card">';
-						htmlData += '<h3>' + data[i].title + '</h3>';
+						htmlData += '<h2>' + data[i].title + '</h2>';
 						htmlData += '<span class="news-info-container">';
 						htmlData += '<div class="news-info">';
-						htmlData += '<h5><i class="fa-solid fa-clock"></i> &nbsp;' + data[i].time + '</h5>';
-						htmlData += '<h5><i class="fa-solid fa-calendar-days"></i> &nbsp;' + data[i].date + '</h5>';
+						htmlData += '<h5><i class="fa-solid fa-clock"></i>' + data[i].time + '</h5>';
+						htmlData += '<h5><i class="fa-solid fa-calendar-days"></i>' + data[i].date + '</h5>';
 						htmlData += '</div>';
 						htmlData += '</span>';
 						htmlData += '<span class="hr-container">';
 						htmlData += '<hr>';
 						htmlData += '</span>';
-						htmlData += '<img src="' + data[i].image + '">';
+						htmlData += '<img src="' + data[i].image + '" alt="' + data[i].imageAlt + '">';
 						htmlData += '<p>' + data[i].paragraph + '</p>';
 						htmlData += '</div>';
 					}
@@ -249,6 +249,12 @@
 		</div>
 	</div>
 	<!--==================================================================== FOOTER END -->
+
+
+	<!-- SCROLL-TO-TOP START ===========================================================-->
+	<button id="to-top-btn"><i class="fa-solid fa-chevron-up"></i></button>
+	<script src="to-top.js"></script>
+	<!--============================================================= SCROLL-TO-TOP END -->
 
 
 	<script src="script.js"></script>

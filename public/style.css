@@ -15,14 +15,14 @@ html {
 	scroll-behavior: smooth;
 }
 
-.hr-container{
+.hr-container {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 30px 0px;
 }
-hr{
+hr {
 	border: 2px solid #1e75c2;
 	border-radius: 2px;
 	width: 10%;
@@ -66,6 +66,32 @@ p {
 /* =========================================== SCROLLBAR PROPERTIES END */
 
 
+/* TO-TOP START ======================================================= */
+#to-top-btn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 5;
+	font-size: 20px;
+	border: none;
+	background: #1e75c2;
+	color: #ececec;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	border-radius: 25px;
+	transition: 0.4s;
+}
+#to-top-btn:hover {
+	color: #ececec;
+	background: #3791df;
+	scale: 1.05;
+	transition: 0.4s;
+}
+/* ========================================================= TO-TOP END */
+
+
 /* NAVBAR PROPERTIES START ============================================ */
 .nav-bar {
 	z-index: 1;
@@ -82,7 +108,7 @@ p {
 	justify-content: center;
 }
 
-.nav-bar .activepage{
+.nav-bar .activepage {
 	color: #0e0e0e;
 	background: #fff;
 	border-bottom: 3px solid #1e75c2;
@@ -92,7 +118,7 @@ p {
 	text-shadow: none;
 }
 
-.nav-bar button{
+.nav-bar button {
 	color: #fff;
 	background: transparent;
 	font-size: small;
@@ -102,12 +128,12 @@ p {
 	border-radius: 5px;
 	cursor: pointer;
 }
-.nav-bar button:hover{
+.nav-bar button:hover {
 	color: #0e0e0e;
 	background: #fff;
 }
 
-.nav-container{
+.nav-container {
 	width: 95%;
 	height: 80%;
 	display: flex;
@@ -115,14 +141,14 @@ p {
 	justify-content: space-between;
 }
 
-.nav-logo{
+.nav-logo {
 	position: relative;
 	left: 0;
 }
-.nav-logo img{
+.nav-logo img {
 	height: 40px;
 }
-.nav-menu{
+.nav-menu {
 	position: relative;
 	right: 0;
 }
@@ -185,19 +211,19 @@ p {
 	height: 60%;
 	width: 85%;
 }
-.header-container .title{
+.header-container .title {
 	letter-spacing: -2px;
 	font-size: xxx-large;
 	margin-bottom: 6px;
 }
-.header-container .sub-title{
+.header-container .sub-title {
 	letter-spacing: -1px;
 	font-size: xx-large;
 	margin-bottom: 45px;
 }
 .header-container button {
 	color: #fff;
-	background: #1e4466;
+	background: #1e75c2;
 	font-size: medium;
 	text-transform: uppercase;
 	border: none;
@@ -207,7 +233,7 @@ p {
 	transition: 0.5s;
 }
 .header-container button:hover {
-	color: #0e0e0e;
+	color: #1e75c2;
 	background: #fff;
 	scale: 1.05;
 	transition: 0.5s;
@@ -224,19 +250,19 @@ p {
 	height: 100vh;
 	color: #fff;
 }
-.sub-header-container{
+.sub-header-container {
 	text-align: center;
 	height: auto;
 	width: 95%;
 }
-.sub-header-container h1{
+.sub-header-container h1 {
 	font-size: medium;
 	margin-bottom: 5px;
 }
-.sub-header-container h2{
+.sub-header-container h2 {
 	font-size: xx-large;
 }
-.sub-header-container p{
+.sub-header-container p {
 	text-align: justify;
 	text-align-last: center;
 	margin: 30px 0px 30px 0px;
@@ -245,7 +271,7 @@ p {
 
 
 /* ACADEMICS-SECTION START ============================================ */
-.academics-section{
+.academics-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -255,7 +281,7 @@ p {
 	color: #fff;
 	background: #1e4466;
 }
-.academics-section-container{
+.academics-section-container {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -265,7 +291,7 @@ p {
 	width: 100%;
 	height: auto;
 }
-.academics-card{
+.academics-card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -280,34 +306,34 @@ p {
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.3s;
 }
-.academics-card:hover{
+.academics-card:hover {
 	box-shadow: 0 0 50px #2c6292;
 	transition: 0.3s;
 }
-#primary{
+#primary {
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/primary.webp');
 	background-size: cover;
 }
-#middle{
+#middle {
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/middle.webp');
 	background-size: cover;
 }
-#upper{
+#upper {
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/upper.webp');
 	background-size: cover;
 }
-#ordinary{
+#ordinary {
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/ordinary.webp');
 	background-size: cover;
 }
-#advanced{
+#advanced {
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/advanced.webp');
 	background-size: cover;
 }
 
 .academics-card button {
 	color: #fff;
-	background: #1e4466;
+	background: #1e75c2;
 	text-transform: uppercase;
 	border: none;
 	border-radius: 5px;
@@ -317,7 +343,7 @@ p {
 	transition: 0.5s;
 }
 .academics-card button:hover {
-	color: #0e0e0e;
+	color: #1e75c2;
 	background: #fff;
 	scale: 1.05;
 	transition: 0.5s;
@@ -336,7 +362,7 @@ p {
 	color: #fff;
 	background: #1e4466;
 }
-.news-container{
+.news-container {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -346,7 +372,7 @@ p {
 	width: 100%;
 	height: auto;
 }
-.news-card{
+.news-card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -361,40 +387,44 @@ p {
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.3s;
 }
-.news-card:hover{
+.news-card:hover {
 	box-shadow: 0 0 50px #2c6292;
 	transition: 0.3s;
 }
 
-.news-card h3{
+.news-card h2 {
 	margin: 20px;
 }
-.news-card img{
+.news-card img {
 	border-radius: 5px;
 	margin-bottom: 20px;
 	width: 90%;
 }
-.news-card p{
+.news-card p {
 	width: 90%;
 	padding: 10px 0px 15px 0px;
 	text-align: justify;
 	text-align-last: center;
 }
 
-.news-info-container{
+.news-info-container {
 	height: auto;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.news-info{
+.news-info {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 }
-.news-info h5{
+.news-info i {
+	color: #4395dc;
+	margin-right: 10px;
+}
+.news-info h5 {
 	margin: 0px 15px 0px 15px;
 }
 /* =================================================== NEWS-SECTION END */
@@ -408,9 +438,9 @@ p {
 	justify-content: center;
 	height: 30vh;
 	color: #fff;
-	background: #142d44;
+	background: #202020;
 }
-.details-container{
+.details-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -418,18 +448,18 @@ p {
 	width: 95%;
 	height: auto;
 }
-.details-container h1{
+.details-container h1 {
 	margin: 10px 0px 25px 0px;
 }
 
-.sm-container{
+.sm-container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
 }
-.sm-icon{
+.sm-icon {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -441,11 +471,11 @@ p {
 	color: #fff;
 	border: 2px solid #fff;
 	border-radius: 25px;
-	background: #1e4466;
+	background: #1e75c2;
 	transition: 0.4s;
 }
-.sm-icon:hover{
-	color: #1e4466;
+.sm-icon:hover {
+	color: #1e75c2;
 	background: #ececec;
 	border: 2px solid #ececec;
 	transition: 0.4s;
@@ -460,7 +490,7 @@ p {
 	justify-content: center;
 	height: 10vh;
 	color: #ececec;
-	background: #0b1825;
+	background: #0e0e0e;
 }
 /* FOOTER END ========================================================= */
 
@@ -486,11 +516,11 @@ p {
 	height: auto;
 	width: 85%;
 }
-.error-container .error-title{
+.error-container .error-title {
 	letter-spacing: -15px;
 	font-size: 150px;
 }
-.error-container .error-sub-title{
+.error-container .error-sub-title {
 	font-size: larger;
 	text-transform: none;
 	margin-bottom: 30px;
