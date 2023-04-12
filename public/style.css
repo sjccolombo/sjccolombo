@@ -460,3 +460,50 @@ p {
 
 
 /* 404 PAGE ========================================================================================= */
+/* HEADER PROPERTIES START ============================================ */
+.error-header {
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Banners/banner.webp');
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.error-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 60%;
+	width: 85%;
+}
+.error-container .error-title{
+	letter-spacing: -2px;
+	font-size: xxx-large;
+	margin-bottom: 6px;
+}
+.error-container .error-sub-title{
+	letter-spacing: -1px;
+	font-size: xx-large;
+	margin-bottom: 45px;
+}
+.error-container button {
+	color: #fff;
+	background: #1e4466;
+	font-size: medium;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 25px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.error-container button:hover {
+	color: #0e0e0e;
+	background: #fff;
+	scale: 1.05;
+	transition: 0.5s;
+}
+/* ============================================== HEADER PROPERTIES END */
