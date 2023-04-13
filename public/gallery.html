@@ -14,13 +14,13 @@
 	<meta name="description" content="">
 	<!-- Open Graph -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://website.com">
+	<meta property="og:url" content="https://sjccolombo.sandunwira.repl.co/gallery.html">
 	<meta property="og:title" content="Gallery - St. Joseph's College Colombo 10">
 	<meta property="og:description" content="">
 	<meta property="og:image" content="https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/preview.webp">
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:url" content="https://website.com">
+	<meta name="twitter:url" content="https://sjccolombo.sandunwira.repl.co/gallery.html">
 	<meta name="twitter:title" content="Gallery - St. Joseph's College Colombo 10">
 	<meta name="twitter:description" content="">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/preview.webp">
@@ -107,39 +107,7 @@
 		<div class="details-container" id="details-container"></div>
 	</div>
 
-	<script>
-		// Wait for DOM to finish loading before running script
-		document.addEventListener('DOMContentLoaded', () => {
-			// Use fetch to get the JSON data
-			fetch('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/JSON/main/info.json')
-				.then(response => response.json())
-				.then(data => {
-					// Get the container element
-					let container = document.getElementById('details-container');
-					let htmlData = '';
-					// Loop through the data array
-					for (let i = 0; i < data.length; i++) {
-						htmlData += '<h1>Follow Us</h1>';
-						htmlData += '<div class="sm-container">';
-						htmlData += '<a class="sm-icon" href="' + data[i].youtubeLink + '" target="_blank" title="YouTube">';
-						htmlData += '<i class="fa-brands fa-youtube"></i>';
-						htmlData += '</a>';
-						htmlData += '<a class="sm-icon" href="' + data[i].facebookLink + '" target="_blank" title="Facebook">';
-						htmlData += '<i class="fa-brands fa-facebook-f"></i>';
-						htmlData += '</a>';
-						htmlData += '<a class="sm-icon" href="' + data[i].instagramLink + '" target="_blank" title="Instagram">';
-						htmlData += '<i class="fa-brands fa-instagram"></i>';
-						htmlData += '</a>';
-						htmlData += '</div>';
-					}
-					// Insert the HTML into the container
-					container.innerHTML = htmlData;
-				})
-				.catch(error => {
-					console.error(error);
-				});
-		});
-	</script>
+	<script src="details.js"></script>
 	<!--=========================================================== DETAILS-SECTION END -->
 
 
