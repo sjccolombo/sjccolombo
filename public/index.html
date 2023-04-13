@@ -14,13 +14,13 @@
 	<meta name="description" content="St. Joseph's College is a prestigious Catholic boys' school that offers top-notch education with a focus on social development and academic excellence. Our exceptional extracurricular activities and safe environment educate our students to be caring and responsible global citizens.">
 	<!-- Open Graph -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://website.com">
+	<meta property="og:url" content="https://sjccolombo.sandunwira.repl.co">
 	<meta property="og:title" content="Home - St. Joseph's College Colombo 10">
 	<meta property="og:description" content="St. Joseph's College is a prestigious Catholic boys' school that offers top-notch education with a focus on social development and academic excellence. Our exceptional extracurricular activities and safe environment educate our students to be caring and responsible global citizens.">
 	<meta property="og:image" content="https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/preview.webp">
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:url" content="https://website.com">
+	<meta name="twitter:url" content="https://sjccolombo.sandunwira.repl.co">
 	<meta name="twitter:title" content="Home - St. Joseph's College Colombo 10">
 	<meta name="twitter:description" content="St. Joseph's College is a prestigious Catholic boys' school that offers top-notch education with a focus on social development and academic excellence. Our exceptional extracurricular activities and safe environment educate our students to be caring and responsible global citizens.">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/preview.webp">
@@ -159,45 +159,9 @@
 		</span>
 
 		<div class="news-container" id="news-container"></div>
-
 	</div>
 
-
-	<script>
-		// Wait for DOM to finish loading before running script
-		document.addEventListener('DOMContentLoaded', () => {
-			// Use fetch to get the JSON data
-			fetch('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/JSON/main/news.json')
-				.then(response => response.json())
-				.then(data => {
-					// Get the container element
-					let container = document.getElementById('news-container');
-					let htmlData = '';
-					// Loop through the data array
-					for (let i = 0; i < data.length; i++) {
-						htmlData += '<div class="news-card">';
-						htmlData += '<h2>' + data[i].title + '</h2>';
-						htmlData += '<span class="news-info-container">';
-						htmlData += '<div class="news-info">';
-						htmlData += '<h5><i class="fa-solid fa-clock"></i>' + data[i].time + '</h5>';
-						htmlData += '<h5><i class="fa-solid fa-calendar-days"></i>' + data[i].date + '</h5>';
-						htmlData += '</div>';
-						htmlData += '</span>';
-						htmlData += '<span class="hr-container">';
-						htmlData += '<hr>';
-						htmlData += '</span>';
-						htmlData += '<img src="' + data[i].image + '" alt="' + data[i].imageAlt + '">';
-						htmlData += '<p>' + data[i].paragraph + '</p>';
-						htmlData += '</div>';
-					}
-					// Insert the HTML into the container
-					container.innerHTML = htmlData;
-				})
-				.catch(error => {
-					console.error(error);
-				});
-		});
-	</script>
+	<script src="news.js"></script>
 	<!--============================================================== NEWS-SECTION END -->
 
 
@@ -206,39 +170,7 @@
 		<div class="details-container" id="details-container"></div>
 	</div>
 
-	<script>
-		// Wait for DOM to finish loading before running script
-		document.addEventListener('DOMContentLoaded', () => {
-			// Use fetch to get the JSON data
-			fetch('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/JSON/main/info.json')
-				.then(response => response.json())
-				.then(data => {
-					// Get the container element
-					let container = document.getElementById('details-container');
-					let htmlData = '';
-					// Loop through the data array
-					for (let i = 0; i < data.length; i++) {
-						htmlData += '<h1>Follow Us</h1>';
-						htmlData += '<div class="sm-container">';
-						htmlData += '<a class="sm-icon" href="' + data[i].youtubeLink + '" target="_blank" title="YouTube">';
-						htmlData += '<i class="fa-brands fa-youtube"></i>';
-						htmlData += '</a>';
-						htmlData += '<a class="sm-icon" href="' + data[i].facebookLink + '" target="_blank" title="Facebook">';
-						htmlData += '<i class="fa-brands fa-facebook-f"></i>';
-						htmlData += '</a>';
-						htmlData += '<a class="sm-icon" href="' + data[i].instagramLink + '" target="_blank" title="Instagram">';
-						htmlData += '<i class="fa-brands fa-instagram"></i>';
-						htmlData += '</a>';
-						htmlData += '</div>';
-					}
-					// Insert the HTML into the container
-					container.innerHTML = htmlData;
-				})
-				.catch(error => {
-					console.error(error);
-				});
-		});
-	</script>
+	<script src="details.js"></script>
 	<!--=========================================================== DETAILS-SECTION END -->
 
 
@@ -255,9 +187,6 @@
 	<button id="to-top-btn"><i class="fa-solid fa-chevron-up"></i></button>
 	<script src="to-top.js"></script>
 	<!--============================================================= SCROLL-TO-TOP END -->
-
-
-	<script src="script.js"></script>
 
 </body>
 
