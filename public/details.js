@@ -20,8 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 htmlData += '<a class="sm-icon" href="' + data[i].instagramLink + '" target="_blank" title="Instagram">';
                 htmlData += '<i class="fa-brands fa-instagram"></i>';
                 htmlData += '</a>';
-                htmlData += '<a class="sm-icon" href="' + data[i].email + '" target="_blank" title="Email">';
+                htmlData += '<a class="sm-icon" href="mailto:' + data[i].email + '" title="Email">';
                 htmlData += '<i class="fa-solid fa-envelope"></i>';
+                htmlData += '</a>';
+                htmlData += '<a class="sm-icon" href="tel:' + data[i].contactNo + '" title="Telephone">';
+                htmlData += '<i class="fa-solid fa-phone"></i>';
                 htmlData += '</a>';
                 htmlData += '</div>';
             }

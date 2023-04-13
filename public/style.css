@@ -173,7 +173,8 @@ p {
 .dropdown-content a {
 	color: #fff;
 	background: #1e4466;
-	border-bottom: 3px solid #1e75c2;
+	border-bottom: 1px solid #1e75c2;
+	border-image: linear-gradient(90deg, #1e75c2, #909090) 1;
 	display: block;
 	padding: 10px 15px;
 	text-decoration: none;
@@ -430,6 +431,127 @@ p {
 /* =================================================== NEWS-SECTION END */
 
 
+/* GOOGLEMAP START ==================================================== */
+.googleMap{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 75vh;
+	padding: 35px 20px;
+}
+.googleMap-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	height: 100%;
+}
+.googleMap-container iframe{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	box-shadow: 0 0 50px #1e4466;
+	transition: 0.3s;
+}
+.googleMap-container iframe:hover{
+	box-shadow: 0 0 50px #2c6292;
+	transition: 0.3s;
+}
+/* ====================================================== GOOGLEMAP END */
+
+
+/* CONTACTUS-SECTION START ============================================ */
+.contactUs-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	padding: 35px 20px;
+	color: #fff;
+	background: #1e4466;
+}
+.contactUs-section h1 {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.contactUs-section form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.contactForm-div span{
+	color: #c52929;
+}
+.contactForm-div label {
+	width: 100%;
+	text-align: left;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	cursor: text;
+}
+.contactForm-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	padding: 10px;
+}
+
+.contactForm-div input{
+	font-size: small;
+	width: 100%;
+	padding: 10px 15px;
+	border-radius: 5px;
+	outline: 3px solid transparent;
+	border: none;
+	transition: 0.4s;
+}
+.contactForm-div input:focus{
+	outline: 3px solid #1e75c2;
+	transition: 0.4s;
+}
+.contactForm-div textarea{
+	resize: none;
+	font-size: small;
+	width: 100%;
+	height: 150px;
+	padding: 10px 15px;
+	border-radius: 5px;
+	outline: 3px solid transparent;
+	border: none;
+	transition: 0.4s;
+}
+.contactForm-div textarea:focus{
+	outline: 3px solid #1e75c2;
+	transition: 0.4s;
+}
+.contactForm-div button {
+	color: #fff;
+	background: #1e75c2;
+	text-transform: uppercase;
+	font-size: medium;
+	border: none;
+	border-radius: 5px;
+	margin: 15px;
+	padding: 10px 15px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.contactForm-div button:hover {
+	color: #1e75c2;
+	background: #fff;
+	scale: 1.05;
+	transition: 0.5s;
+}
+/* ============================================== CONTACTUS-SECTION END */
+
+
 /* DETAILS-SECTION START ============================================== */
 .details-section {
 	display: flex;
@@ -464,8 +586,8 @@ p {
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	margin: 0px 10px;
 	font-size: larger;
 	color: #fff;
@@ -563,7 +685,7 @@ p {
 	width: 90%;
 	height: auto;
 }
-iframe {
+.gallery-container iframe {
 	width: 48%;
 	height: 55vh;
 	margin: 10px 15px;
@@ -571,7 +693,7 @@ iframe {
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.4s;
 }
-iframe:hover {
+.gallery-container iframe:hover {
 	box-shadow: 0 0 50px #2c6292;
 	transition: 0.4s;
 }
@@ -786,94 +908,3 @@ iframe:hover {
 }
 /* ================================================ ABOUTUS-CONTENT END */
 
-
-/* CONTACTUS-SECTION START ============================================ */
-.contactUs-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: auto;
-	padding: 35px 20px;
-	color: #fff;
-	background: #1e4466;
-}
-.contactUs-section h1 {
-	text-align: center;
-	margin-top: 10px;
-}
-
-.contactUs-section form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-}
-
-.contactForm-div span{
-	color: #c52929;
-}
-.contactForm-div label {
-	width: 100%;
-	text-align: left;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-	cursor: text;
-}
-.contactForm-div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 50%;
-	padding: 10px;
-}
-
-.contactForm-div input{
-	font-size: small;
-	width: 100%;
-	padding: 10px 15px;
-	border-radius: 5px;
-	outline: 3px solid transparent;
-	border: none;
-	transition: 0.4s;
-}
-.contactForm-div input:focus{
-	outline: 3px solid #1e75c2;
-	transition: 0.4s;
-}
-.contactForm-div textarea{
-	resize: none;
-	font-size: small;
-	width: 100%;
-	height: 150px;
-	padding: 10px 15px;
-	border-radius: 5px;
-	outline: 3px solid transparent;
-	border: none;
-	transition: 0.4s;
-}
-.contactForm-div textarea:focus{
-	outline: 3px solid #1e75c2;
-	transition: 0.4s;
-}
-.contactForm-div button {
-	color: #fff;
-	background: #1e75c2;
-	text-transform: uppercase;
-	font-size: medium;
-	border: none;
-	border-radius: 5px;
-	margin: 15px;
-	padding: 10px 15px;
-	cursor: pointer;
-	transition: 0.5s;
-}
-.contactForm-div button:hover {
-	color: #1e75c2;
-	background: #fff;
-	scale: 1.05;
-	transition: 0.5s;
-}
-/* ============================================== CONTACTUS-SECTION END */
