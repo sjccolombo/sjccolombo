@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             for (let i = 0; i < data.length; i++) {
                 htmlData += '<div class="education-contentCard">';
                 htmlData += '<a href="' + data[i].link + '">';
-                htmlData += '<h2>' + data[i].grade + '</h2>';
+                htmlData += '<h2>' + data[i].stream + '</h2>';
                 htmlData += '</a>';
                 htmlData += '<img src="' + data[i].image + '" alt="' + data[i].imageAlt + '">';
                 htmlData += '</div>';
