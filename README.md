@@ -34,10 +34,10 @@
             - [x] 12c1 - 12c2 - 12c3 - 12c4 - 12c5 - 13c1 - 13c2 - 13c3 - 13c4 - 13c5
     - [ ] London Advanced Level
 - [x] Facilities
-- [ ] Activities
-    - [ ] Societies
+- [x] Activities
+    - [x] Societies
         - [ ] Altar Servers' Union - Green Earth Club - Legion of Mary - St. Vincent de Paul Society - Cadets - Gulid of Immaculate Heart of Mary - St. Cecilia's Choir - Commerce Union - ICT Society - Media Circle - Tamil Literary Union - Cub Scouting - Interact Club - Oriental Band - United Nations Youth Association - English Debating Union - Jesus Youth Movement - Scouts - Western Band - English Literary Union - Josephian Bible Society - Sinhala Literary Union - Young Catholic Students Movement
-    - [ ] Sports
+    - [x] Sports
         - [ ] Swimming - Diving - Cricket - Rowing - Wushu - Athletics - Rugby - Badminton - Squash - Basketball - Football - Boxing - Hockey - Taekwondo - Chess - Karate - Tennis
 - [x] Gallery
 - [x] About Us
