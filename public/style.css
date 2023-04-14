@@ -908,3 +908,93 @@ p {
 }
 /* ================================================ ABOUTUS-CONTENT END */
 
+
+
+
+.education-header {
+	height: 70vh;
+	color: #fff;
+	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Banners/banner.webp');
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#primary-header{
+	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/primary.webp');
+	background-size: cover;
+}
+#middle-header{
+	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/middle.webp');
+	background-size: cover;
+}
+#upper-header{
+	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/upper.webp');
+	background-size: cover;
+}
+#ordinary-header{
+	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/ordinary.webp');
+	background-size: cover;
+}
+#advanced-header{
+	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/advanced.webp');
+	background-size: cover;
+}
+.education-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 60%;
+	width: 85%;
+}
+.education-container .title {
+	letter-spacing: -2px;
+	font-size: xxx-large;
+	margin-bottom: 6px;
+}
+
+
+.education-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	height: auto;
+}
+
+.education-contentCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 20px;
+	margin: 10px;
+	width: 25%;
+	height: auto;
+	border-radius: 5px;
+	color: #ececec;
+	background: #142d44;
+	box-shadow: 0 0 50px #1e4466;
+	transition: 0.3s;
+}
+.education-contentCard:hover {
+	box-shadow: 0 0 50px #2c6292;
+	transition: 0.3s;
+}
+.education-contentCard a {
+	text-decoration: none;
+}
+.education-contentCard h2 {
+	text-align: center;
+	margin-top: 10px;
+}
+.education-contentCard img {
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 90%;
+}
