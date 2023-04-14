@@ -425,7 +425,8 @@ p {
 	color: #4395dc;
 	margin-right: 10px;
 }
-.news-info h5 {
+.news-info h3 {
+	font-size: 16px;
 	margin: 0px 15px 0px 15px;
 }
 /* =================================================== NEWS-SECTION END */
@@ -1062,6 +1063,76 @@ p {
 	text-align: center;
 }
 .facilities-contentCard img {
+	border-radius: 5px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	width: 90%;
+}
+
+
+
+
+.activities-header {
+	height: 70vh;
+	color: #fff;
+	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Banners/banner.webp');
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.activities-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 60%;
+	width: 85%;
+}
+.activities-container .title {
+	letter-spacing: -2px;
+	font-size: xxx-large;
+	margin-bottom: 6px;
+}
+
+
+.activities-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	height: auto;
+}
+
+.activities-contentCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 20px;
+	margin: 10px;
+	width: 25%;
+	height: auto;
+	border-radius: 5px;
+	color: #ececec;
+	background: #142d44;
+	box-shadow: 0 0 50px #1e4466;
+	transition: 0.3s;
+}
+.activities-contentCard:hover {
+	box-shadow: 0 0 50px #2c6292;
+	transition: 0.3s;
+}
+.activities-contentCard a {
+	text-decoration: none;
+}
+.activities-contentCard h2 {
+	text-align: center;
+}
+.activities-contentCard img {
 	border-radius: 5px;
 	margin-bottom: 10px;
 	margin-top: 20px;
