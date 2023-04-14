@@ -1,49 +1,44 @@
 ## STRUCTURE
 
 - [x] Home
-- Academics
-    - Primary School
-        - Grade 1
-            - 1s1 - 1s2 - 1s3 - 1s4 - 1s5 - 1s6 - 1T
-        - Grade 2
-            - 2s1 - 2s2 - 2s3 - 2s4 - 2s5 - 2s6 - 2T
-        - Grade 3
-            - 3s1 - 3s2 - 3s3 - 3s4 - 3s5 - 3s6 - 3T
-        - Grade 4
-            - 4s1 - 4s2 - 4s3 - 4s4 - 4s5 - 4s6 - 4T
-        - Grade 5
-            - 5s1 - 5s2 - 5s3 - 5s4 - 5s5 - 5s6 - 5T
-    - Middle School
-        - Grade 6
-            - 6s1 - 6s2 - 6s3 - 6s4 - 6s5 - 6s6 - 6s7 - 6T
-        - Grade 7
-            - 7s1 - 7s2 - 7s3 - 7s4 - 7s5 - 7s6 - 7s7 - 7T
-        - Grade 8
-            - 8s1 - 8s2 - 8s3 - 8s4 - 8s5 - 8s6 - 8s7 - 8T
-    - Upper School
-        - Grade 9
-            - 9s1 - 9s2 - 9s3 - 9s4 - 9s5 - 9s6 - 9s7 - 9T
-    - GCE Ordinary Level
-        - Grade 10
-            - 10s1 - 10s2 - 10s3 - 10s4 - 10s5 - 10s6 - 10s7 - 10T
-        - Grade 11
-            - 11s1 - 11s2 - 11s3 - 11s4 - 11s5 - 11s6 - 11s7 - 11T
-    - GCE Advanced Level
-        - A/L Science
-            - 12s1 - 12s2 - 12s3 - 12s4
-            - 13s1 - 13s2 - 13s3 - 13s4
-        - A/L Commerce
-            - 12c1 - 12c2 - 12c3 - 12c4 - 12c5
-            - 13c1 - 13c2 - 13c3 - 13c4 - 13c5
-    - London Advanced Level
-- Life at Joes
-    - Facilities
-    - Prefects' Body
-- Activities
-    - Societies
-        - Altar Servers' Union - Green Earth Club - Legion of Mary - St. Vincent de Paul Society - Cadets - Gulid of Immaculate Heart of Mary - St. Cecilia's Choir - Commerce Union - ICT Society - Media Circle - Tamil Literary Union - Cub Scouting - Interact Club - Oriental Band - United Nations Youth Association - English Debating Union - Jesus Youth Movement - Scouts - Western Band - English Literary Union - Josephian Bible Society - Sinhala Literary Union - Young Catholic Students Movement
-    - Sports
-        - Swimming - Diving - Cricket - Rowing - Wushu - Athletics - Rugby - Badminton - Squash - Basketball - Football - Boxing - Hockey - Taekwondo - Chess - Karate - Tennis
+- [x] Academics
+    - [x] Primary School
+        - [x] Grade 1
+            - [x] 1s1 - 1s2 - 1s3 - 1s4 - 1s5 - 1s6 - 1T
+        - [x] Grade 2
+            - [x] 2s1 - 2s2 - 2s3 - 2s4 - 2s5 - 2s6 - 2T
+        - [x] Grade 3
+            - [x] 3s1 - 3s2 - 3s3 - 3s4 - 3s5 - 3s6 - 3T
+        - [x] Grade 4
+            - [x] 4s1 - 4s2 - 4s3 - 4s4 - 4s5 - 4s6 - 4T
+        - [x] Grade 5
+            - [x] 5s1 - 5s2 - 5s3 - 5s4 - 5s5 - 5s6 - 5T
+    - [x] Middle School
+        - [x] Grade 6
+            - [x] 6s1 - 6s2 - 6s3 - 6s4 - 6s5 - 6s6 - 6s7 - 6T
+        - [x] Grade 7
+            - [x] 7s1 - 7s2 - 7s3 - 7s4 - 7s5 - 7s6 - 7s7 - 7T
+        - [x] Grade 8
+            - [x] 8s1 - 8s2 - 8s3 - 8s4 - 8s5 - 8s6 - 8s7 - 8T
+        - [x] Grade 9
+            - [x] 9s1 - 9s2 - 9s3 - 9s4 - 9s5 - 9s6 - 9s7 - 9T
+    - [x] GCE Ordinary Level
+        - [x] Grade 10
+            - [x] 10s1 - 10s2 - 10s3 - 10s4 - 10s5 - 10s6 - 10s7 - 10T
+        - [x] Grade 11
+            - [x] 11s1 - 11s2 - 11s3 - 11s4 - 11s5 - 11s6 - 11s7 - 11T
+    - [x] GCE Advanced Level
+        - [x] A/L Science
+            - [x] 12s1 - 12s2 - 12s3 - 12s4 - 13s1 - 13s2 - 13s3 - 13s4
+        - [x] A/L Commerce
+            - [x] 12c1 - 12c2 - 12c3 - 12c4 - 12c5 - 13c1 - 13c2 - 13c3 - 13c4 - 13c5
+    - [ ] London Advanced Level
+- [ ] Facilities
+- [ ] Activities
+    - [ ] Societies
+        - [ ] Altar Servers' Union - Green Earth Club - Legion of Mary - St. Vincent de Paul Society - Cadets - Gulid of Immaculate Heart of Mary - St. Cecilia's Choir - Commerce Union - ICT Society - Media Circle - Tamil Literary Union - Cub Scouting - Interact Club - Oriental Band - United Nations Youth Association - English Debating Union - Jesus Youth Movement - Scouts - Western Band - English Literary Union - Josephian Bible Society - Sinhala Literary Union - Young Catholic Students Movement
+    - [ ] Sports
+        - [ ] Swimming - Diving - Cricket - Rowing - Wushu - Athletics - Rugby - Badminton - Squash - Basketball - Football - Boxing - Hockey - Taekwondo - Chess - Karate - Tennis
 - [x] Gallery
 - [x] About Us
     - [x] History
