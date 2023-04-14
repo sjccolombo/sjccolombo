@@ -87,6 +87,9 @@ hr{
 /* ========================================================= TO-TOP END */
 
 /* NAVBAR PROPERTIES START ============================================ */
+.hamburger-menu{
+	display: none;
+}
 .nav-bar{
 	z-index: 1;
 	position: fixed;
@@ -695,12 +698,10 @@ hr{
 	margin: 10px 0px 10px 0px;
 }
 .abContent-flagImage{
-	height: 400px;
-	width: auto;
+	width: 80%;
 }
 .abContent-flagImage img{
-	height: 100%;
-	width: auto;
+	width: 100%;
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.3s;
 }
@@ -994,4 +995,130 @@ hr{
 	margin: 20px 0px 10px 0px;
 	width: 90%;
 }
-/* ACTIVITIES-CONTENT END ============================================= */
+/* ============================================= ACTIVITIES-CONTENT END */
+
+
+/* MOBILE-RESPONSIVE START ========================================================================== */
+@media (max-width: 1000px) {
+	/* NAVBAR START =================================================== */
+	.nav-menu {
+		display: none;
+	}
+	.nav-logo img{
+		height: 35px;
+		margin-left: 5px;
+	}
+	.hamburger-menu {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		height: 10vh;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 9999;
+	}
+	.hamburger-menu .hamburger {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 20px;
+		height: 20px;
+		margin: 5px;
+		padding: 5px;
+		color: #dbdbdb;
+	}
+	.nav-menu.show {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 10vh;
+		left: 0;
+		height: 100vh;
+		width: 100%;
+		background-color: #1e44666d;
+		backdrop-filter: blur(10px);
+		transition: 0.5s;
+	}
+	.nav-menu.show button {
+		margin: 10px 0;
+	}
+	.nav-menu.show .dropdown-content {
+		margin-left: 0;
+		display: contents;
+	}
+	/* HEADER START =================================================== */
+	.title{
+		font-size: x-large;
+	}
+	.sub-title{
+		font-size: large;
+	}
+	/* SUB-HEADER START =============================================== */
+	.sub-header{
+		height: auto;
+		padding-top: 10vh;
+	}
+	.sub-header-container{
+		width: 80%;
+	}
+	.sub-header-container h2{
+		font-size: x-large;
+	}
+	/* ACADEMICS START ================================================ */
+	.academics-card{
+		width: 80%;
+	}
+	/* NEWS START ===================================================== */
+	.news-card{
+		width: 80%;
+	}
+	.news-info{
+		flex-direction: column;
+	}
+	.news-info h3{
+		margin: 5px 15px;
+	}
+	/* CONTACT START ================================================== */
+	.contactForm-div{
+		width: 80%;
+	}
+	/* DETAILS START ================================================== */
+	.details-container h1{
+		font-size: x-large;
+	}
+	/* FACILITIES START =============================================== */
+	.facilities-contentCard{
+		width: 80%;
+	}
+	/* ABOUT-CONTENT START ============================================ */
+	.abContent-container p{
+		width: 90%;
+	}
+	.abContent-history .list-item{
+		width: 80%;
+	}
+	.abContent-rectorsCard{
+		width: 80%;
+	}
+	/* GALLERY START ================================================== */
+	.gallery-section{
+		height: auto;
+		padding: 10vh 0px;
+	}
+	.gallery-container{
+		flex-direction: column;
+		width: 80%;
+	}
+	.gallery-container iframe{
+		width: 100%;
+	}
+	/* EDUCATION-CONTENT START ======================================== */
+	.education-header{
+		height: 50vh;
+	}
+	.education-contentCard{
+		width: 80%;
+	}
+}
+/* ============================================================================ MOBILE-RESPONSIVE END */
