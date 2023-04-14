@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let htmlData = '';
             // Loop through the data array
             for (let i = 0; i < data.length; i++) {
-                htmlData += '<h1>Follow Us</h1>';
+                htmlData += '<h1>Connect With Us</h1>';
                 htmlData += '<div class="sm-container">';
                 htmlData += '<a class="sm-icon" href="' + data[i].youtubeLink + '" target="_blank" title="YouTube">';
                 htmlData += '<i class="fa-brands fa-youtube"></i>';
