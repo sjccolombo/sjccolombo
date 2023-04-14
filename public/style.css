@@ -319,16 +319,16 @@ p {
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/middle.webp');
 	background-size: cover;
 }
-#upper {
-	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/upper.webp');
-	background-size: cover;
-}
 #ordinary {
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/ordinary.webp');
 	background-size: cover;
 }
 #advanced {
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/advanced.webp');
+	background-size: cover;
+}
+#london-advanced {
+	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('');
 	background-size: cover;
 }
 
