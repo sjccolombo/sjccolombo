@@ -1,73 +1,68 @@
-@font-face {
+@font-face{
 	font-family: "Helvetica NDM";
 	src: url("https://github.com/sjccolombo/sjc-storage/blob/main/Fonts/HelveticaNowDisplay-Medium.ttf") format("truetype");
 }
-
-* {
+*{
 	margin: 0;
 	padding: 0;
 	font-family: 'Helvetica NDM', sans-serif;
+	/* For Firefox */
+	scrollbar-width: thin;
 }
-
-html {
+html{
 	color: #fff;
 	background: #1e4466;
 	scroll-behavior: smooth;
 }
-
-.hr-container {
+h1, h2, h3, h4, h5, h6{
+	text-transform: uppercase;
+	text-align: center;
+}
+iframe{
+	border-radius: 10px;
+}
+img{
+	border-radius: 5px;
+}
+a{
+	color: #fff;
+}
+p{
+	font-size: large;
+	line-height: 1.8;
+}
+.hr-container{
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 30px 0px;
 }
-hr {
+hr{
 	border: 2px solid #1e75c2;
 	border-radius: 2px;
 	width: 10%;
 }
-
-h1, h2, h3, h4, h5, h6 {
-	text-transform: uppercase;
-}
-
-a {
-	color: #fff;
-}
-
-p {
-	font-size: large;
-	line-height: 1.8;
-}
-
-
 /* SCROLLBAR PROPERTIES START ========================================= */
-* {
-	/* For Firefox */
-	scrollbar-width: thin;
-}
-
-*::-webkit-scrollbar {
+*::-webkit-scrollbar{
 	width: 7px;
 }
-*::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track{
 	background: transparent;
 }
-*::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb{
 	background-color: #ababab;
 }
-*::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover{
 	background-color: #8f8f8f;
 }
-*::-webkit-scrollbar-thumb:active {
+*::-webkit-scrollbar-thumb:active{
 	background-color: #7a7a7a;
 }
 /* =========================================== SCROLLBAR PROPERTIES END */
 
-
 /* TO-TOP START ======================================================= */
-#to-top-btn {
+#to-top-btn{
 	display: none;
 	position: fixed;
 	bottom: 20px;
@@ -83,7 +78,7 @@ p {
 	border-radius: 25px;
 	transition: 0.4s;
 }
-#to-top-btn:hover {
+#to-top-btn:hover{
 	color: #ececec;
 	background: #3791df;
 	scale: 1.05;
@@ -91,9 +86,8 @@ p {
 }
 /* ========================================================= TO-TOP END */
 
-
 /* NAVBAR PROPERTIES START ============================================ */
-.nav-bar {
+.nav-bar{
 	z-index: 1;
 	position: fixed;
 	top: 0;
@@ -107,8 +101,7 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-
-.nav-bar .activepage {
+.nav-bar .activepage{
 	color: #0e0e0e;
 	background: #fff;
 	border-bottom: 3px solid #1e75c2;
@@ -117,8 +110,7 @@ p {
 .nav-bar .activepage:hover{
 	text-shadow: none;
 }
-
-.nav-bar button {
+.nav-bar button{
 	color: #fff;
 	background: transparent;
 	font-size: small;
@@ -128,49 +120,47 @@ p {
 	border-radius: 5px;
 	cursor: pointer;
 }
-.nav-bar button:hover {
+.nav-bar button:hover{
 	color: #0e0e0e;
 	background: #fff;
 }
-
-.nav-container {
+.nav-container{
 	width: 95%;
 	height: 80%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-
-.nav-logo {
+.nav-logo{
 	position: relative;
 	left: 0;
 }
-.nav-logo img {
+.nav-logo img{
 	height: 40px;
+	border-radius: none;
 }
-.nav-menu {
+.nav-menu{
 	position: relative;
 	right: 0;
 }
-
-.dropdown {
+.dropdown{
 	display: inline-block;
 	position: relative;
 }
-.dropdown-content {
+.dropdown-content{
 	font-size: small;
 	display: none;
 	position: absolute;
 	width: 180%;
 	overflow: hidden;
-	margin-left: 5px;
+	margin: 0px 0px 0px 5px;
 	border-radius: 5px 5px;
 	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.249);
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
 	display: block;
 }
-.dropdown-content a {
+.dropdown-content a{
 	color: #fff;
 	background: #1e4466;
 	border-bottom: 1px solid #1e75c2;
@@ -180,21 +170,20 @@ p {
 	text-decoration: none;
 	transition: 0.5s;
 }
-.dropdown-content a:last-child {
+.dropdown-content a:last-child{
 	border-bottom: none;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover{
 	color: #1e4466;
 	background: #fff;
 	transition: 0.5s;
 }
 /* ============================================== NAVBAR PROPERTIES END */
 
-
 /* HOME PAGE ======================================================================================== */
 /* HEADER PROPERTIES START ============================================ */
-.header {
+.header{
 	height: 100vh;
 	color: #fff;
 	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Banners/banner.webp');
@@ -203,7 +192,7 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-.header-container {
+.header-container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -212,28 +201,28 @@ p {
 	height: 60%;
 	width: 85%;
 }
-.header-container .title {
+.title{
 	letter-spacing: -2px;
 	font-size: xxx-large;
-	margin-bottom: 6px;
+	margin: 0px 0px 6px 0px;
 }
-.header-container .sub-title {
+.sub-title{
 	letter-spacing: -1px;
 	font-size: xx-large;
-	margin-bottom: 45px;
+	margin: 0px 0px 45px 0px;
 }
-.header-container button {
+.blue-btn{
 	color: #fff;
 	background: #1e75c2;
 	font-size: medium;
 	text-transform: uppercase;
 	border: none;
 	border-radius: 5px;
-	padding: 10px 25px;
+	padding: 10px 15px;
 	cursor: pointer;
 	transition: 0.5s;
 }
-.header-container button:hover {
+.blue-btn:hover{
 	color: #1e75c2;
 	background: #fff;
 	scale: 1.05;
@@ -241,9 +230,8 @@ p {
 }
 /* ============================================== HEADER PROPERTIES END */
 
-
 /* SUB-HEADER START =================================================== */
-.sub-header {
+.sub-header{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -251,28 +239,27 @@ p {
 	height: 100vh;
 	color: #fff;
 }
-.sub-header-container {
+.sub-header-container{
 	text-align: center;
 	height: auto;
 	width: 95%;
 }
-.sub-header-container h1 {
+.sub-header-container h1{
 	font-size: medium;
-	margin-bottom: 5px;
+	margin: 0px 0px 5px 0px;
 }
-.sub-header-container h2 {
+.sub-header-container h2{
 	font-size: xx-large;
 }
-.sub-header-container p {
+.sub-header-container p{
 	text-align: justify;
 	text-align-last: center;
 	margin: 30px 0px 30px 0px;
 }
 /* ===================================================== SUB-HEADER END */
 
-
 /* ACADEMICS-SECTION START ============================================ */
-.academics-section {
+.academics-section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -282,7 +269,7 @@ p {
 	color: #fff;
 	background: #1e4466;
 }
-.academics-section-container {
+.academics-section-container{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -292,7 +279,7 @@ p {
 	width: 100%;
 	height: auto;
 }
-.academics-card {
+.academics-card{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -307,53 +294,37 @@ p {
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.3s;
 }
-.academics-card:hover {
+.academics-card:hover{
 	box-shadow: 0 0 50px #2c6292;
 	transition: 0.3s;
 }
-#primary {
+#primary{
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/primary.webp');
 	background-size: cover;
 }
-#middle {
+#middle{
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/middle.webp');
 	background-size: cover;
 }
-#ordinary {
+#ordinary{
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/ordinary.webp');
 	background-size: cover;
 }
-#advanced {
+#advanced{
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/advanced.webp');
 	background-size: cover;
 }
-#london-advanced {
+#london-advanced{
 	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('');
 	background-size: cover;
 }
-
-.academics-card button {
-	color: #fff;
-	background: #1e75c2;
-	text-transform: uppercase;
-	border: none;
-	border-radius: 5px;
-	margin: 15px;
-	padding: 10px 15px;
-	cursor: pointer;
-	transition: 0.5s;
-}
-.academics-card button:hover {
-	color: #1e75c2;
-	background: #fff;
-	scale: 1.05;
-	transition: 0.5s;
+.academics-card h2{
+	margin-bottom: 15px;
 }
 /* ============================================== ACADEMICS-SECTION END */
 
-
 /* NEWS-SECTION START ================================================= */
-.news-section {
+.news-section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -363,7 +334,7 @@ p {
 	color: #fff;
 	background: #1e4466;
 }
-.news-container {
+.news-container{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -373,7 +344,7 @@ p {
 	width: 100%;
 	height: auto;
 }
-.news-card {
+.news-card{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -388,49 +359,45 @@ p {
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.3s;
 }
-.news-card:hover {
+.news-card:hover{
 	box-shadow: 0 0 50px #2c6292;
 	transition: 0.3s;
 }
-
-.news-card h2 {
+.news-card h2{
 	margin: 20px;
 }
-.news-card img {
-	border-radius: 5px;
-	margin-bottom: 20px;
+.news-card img{
+	margin: 0px 0px 20px 0px;
 	width: 90%;
 }
-.news-card p {
+.news-card p{
 	width: 90%;
 	padding: 10px 0px 15px 0px;
 	text-align: justify;
 	text-align-last: center;
 }
-
-.news-info-container {
+.news-info-container{
 	height: auto;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.news-info {
+.news-info{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 }
-.news-info i {
+.news-info i{
 	color: #4395dc;
-	margin-right: 10px;
+	margin: 0px 10px 0px 0px;
 }
-.news-info h3 {
-	font-size: 16px;
+.news-info h3{
+	font-size: 14px;
 	margin: 0px 15px 0px 15px;
 }
 /* =================================================== NEWS-SECTION END */
-
 
 /* GOOGLEMAP START ==================================================== */
 .googleMap{
@@ -450,7 +417,6 @@ p {
 .googleMap-container iframe{
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.3s;
 }
@@ -460,9 +426,8 @@ p {
 }
 /* ====================================================== GOOGLEMAP END */
 
-
 /* CONTACTUS-SECTION START ============================================ */
-.contactUs-section {
+.contactUs-section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -472,30 +437,27 @@ p {
 	color: #fff;
 	background: #1e4466;
 }
-.contactUs-section h1 {
-	text-align: center;
-	margin-top: 10px;
+.contactUs-section h1{
+	margin: 10px 0px 0px 0px;
 }
-
-.contactUs-section form {
+.contactUs-section form{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
 }
-
 .contactForm-div span{
 	color: #c52929;
 }
-.contactForm-div label {
+.contactForm-div label{
 	width: 100%;
 	text-align: left;
 	text-transform: uppercase;
-	margin-bottom: 10px;
+	margin: 0px 0px 10px 0px;
 	cursor: text;
 }
-.contactForm-div {
+.contactForm-div{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -503,7 +465,6 @@ p {
 	width: 50%;
 	padding: 10px;
 }
-
 .contactForm-div input{
 	font-size: small;
 	width: 100%;
@@ -532,29 +493,10 @@ p {
 	outline: 3px solid #1e75c2;
 	transition: 0.4s;
 }
-.contactForm-div button {
-	color: #fff;
-	background: #1e75c2;
-	text-transform: uppercase;
-	font-size: medium;
-	border: none;
-	border-radius: 5px;
-	margin: 15px;
-	padding: 10px 15px;
-	cursor: pointer;
-	transition: 0.5s;
-}
-.contactForm-div button:hover {
-	color: #1e75c2;
-	background: #fff;
-	scale: 1.05;
-	transition: 0.5s;
-}
 /* ============================================== CONTACTUS-SECTION END */
 
-
 /* DETAILS-SECTION START ============================================== */
-.details-section {
+.details-section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -563,7 +505,7 @@ p {
 	color: #fff;
 	background: #202020;
 }
-.details-container {
+.details-container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -571,18 +513,17 @@ p {
 	width: 95%;
 	height: auto;
 }
-.details-container h1 {
+.details-container h1{
 	margin: 10px 0px 25px 0px;
 }
-
-.sm-container {
+.sm-container{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
 }
-.sm-icon {
+.sm-icon{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -597,7 +538,7 @@ p {
 	background: #1e75c2;
 	transition: 0.4s;
 }
-.sm-icon:hover {
+.sm-icon:hover{
 	color: #1e75c2;
 	background: #ececec;
 	border: 2px solid #ececec;
@@ -605,9 +546,8 @@ p {
 }
 /* ================================================ DETAILS-SECTION END */
 
-
 /* FOOTER START ======================================================= */
-.footer {
+.footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -617,11 +557,9 @@ p {
 }
 /* FOOTER END ========================================================= */
 
-
-
 /* 404 PAGE ========================================================================================= */
 /* HEADER PROPERTIES START ============================================ */
-.error-header {
+.error-header{
 	height: 90vh;
 	color: #fff;
 	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Banners/banner.webp');
@@ -630,7 +568,7 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-.error-container {
+.error-container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -639,39 +577,20 @@ p {
 	height: auto;
 	width: 85%;
 }
-.error-container .error-title {
+.error-container .error-title{
 	letter-spacing: -15px;
 	font-size: 150px;
 }
-.error-container .error-sub-title {
+.error-container .error-sub-title{
 	font-size: larger;
 	text-transform: none;
-	margin-bottom: 30px;
-}
-.error-container button {
-	color: #fff;
-	background: #1e4466;
-	font-size: medium;
-	text-transform: uppercase;
-	border: none;
-	border-radius: 5px;
-	padding: 10px 25px;
-	cursor: pointer;
-	transition: 0.5s;
-}
-.error-container button:hover {
-	color: #0e0e0e;
-	background: #fff;
-	scale: 1.05;
-	transition: 0.5s;
+	margin: 0px 0px 30px 0px;
 }
 /* ============================================== HEADER PROPERTIES END */
 
-
-
 /* GALLERY PAGE ===================================================================================== */
 /* GALLERY PROPERTIES START =========================================== */
-.gallery-section {
+.gallery-section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -679,32 +598,29 @@ p {
 	width: 100%;
 	height: 100vh;
 }
-.gallery-container {
+.gallery-container{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 90%;
 	height: auto;
 }
-.gallery-container iframe {
+.gallery-container iframe{
 	width: 48%;
 	height: 55vh;
 	margin: 10px 15px;
-	border-radius: 10px;
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.4s;
 }
-.gallery-container iframe:hover {
+.gallery-container iframe:hover{
 	box-shadow: 0 0 50px #2c6292;
 	transition: 0.4s;
 }
 /* ============================================= GALLERY PROPERTIES END */
 
-
-
 /* ABOUT-US PAGE ==================================================================================== */
 /* ABOUTUS-SECTION START ============================================== */
-.aboutUs-header {
+.aboutUs-header{
 	height: 70vh;
 	color: #fff;
 	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Banners/banner.webp');
@@ -713,7 +629,7 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-.aboutUs-container {
+.aboutUs-container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -722,16 +638,10 @@ p {
 	height: 60%;
 	width: 85%;
 }
-.aboutUs-container .title {
-	letter-spacing: -2px;
-	font-size: xxx-large;
-	margin-bottom: 6px;
-}
 /* ================================================ ABOUTUS-SECTION END */
 
-
 /* ABOUTUS-CONTENT START ============================================== */
-.aboutUs-content {
+.aboutUs-content{
 	height: auto;
 	color: #fff;
 	background: #1e4466;
@@ -740,8 +650,7 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-
-.abContent-container {
+.abContent-container{
 	height: auto;
 	width: 85%;
 	display: flex;
@@ -749,8 +658,8 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-
-.abContent-history {
+/* HISTORY START ========================================= */
+.abContent-history{
 	height: auto;
 	width: 100%;
 	padding: 35px 20px;
@@ -759,21 +668,20 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-.abContent-history p {
+.abContent-history p{
 	text-align: justify;
 	text-align-last: left;
 	text-indent: 50px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px 0px 10px 0px;
 }
-.abContent-history .list-item {
+.abContent-history .list-item{
 	width: 90%;
 	padding: 15px 0px;
 	line-height: 2.0;
 }
-
-
-.abContent-flag {
+/* =========================================== HISTORY END */
+/* FLAG START ============================================ */
+.abContent-flag{
 	height: auto;
 	width: 100%;
 	padding: 35px 20px;
@@ -782,29 +690,27 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-.abContent-flag p {
+.abContent-flag p{
 	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px 0px 10px 0px;
 }
-.abContent-flagImage {
+.abContent-flagImage{
 	height: 400px;
 	width: auto;
 }
-.abContent-flagImage img {
+.abContent-flagImage img{
 	height: 100%;
 	width: auto;
-	border-radius: 10px;
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.3s;
 }
-.abContent-flagImage img:hover {
+.abContent-flagImage img:hover{
 	box-shadow: 0 0 50px #2c6292;
 	transition: 0.3s;
 }
-
-
-.abContent-anthem {
+/* ============================================== FLAG END */
+/* ANTHEM START ========================================== */
+.abContent-anthem{
 	height: auto;
 	width: 100%;
 	padding: 35px 20px;
@@ -813,16 +719,15 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-.abContent-anthem p {
+.abContent-anthem p{
 	text-align: justify;
 	text-align-last: left;
 	text-indent: 50px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px 0px 10px 0px;
 }
-
-
-.abContent-emblem {
+/* ============================================ ANTHEM END */
+/* EMBLEM START ========================================== */
+.abContent-emblem{
 	height: auto;
 	width: 100%;
 	padding: 35px 20px;
@@ -831,29 +736,27 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-.abContent-emblem p {
+.abContent-emblem p{
 	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px 0px 10px 0px;
 }
-.abContent-emblemImage {
+.abContent-emblemImage{
 	height: 350px;
 	width: auto;
 }
-.abContent-emblemImage img {
+.abContent-emblemImage img{
 	height: 100%;
 	width: auto;
-	border-radius: 10px;
 	filter: none;
 	transition: 0.3s;
 }
-.abContent-emblemImage img:hover {
+.abContent-emblemImage img:hover{
 	filter: drop-shadow(0 0 20px #ffffff80);
 	transition: 0.3s;
 }
-
-
-.abContent-rectors {
+/* ============================================ EMBLEM END */
+/* RECTORS START ========================================= */
+.abContent-rectors{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -863,7 +766,7 @@ p {
 	color: #fff;
 	background: #1e4466;
 }
-.abContent-rectorsContainer {
+.abContent-rectorsContainer{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -873,7 +776,7 @@ p {
 	width: 100%;
 	height: auto;
 }
-.abContent-rectorsCard {
+.abContent-rectorsCard{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -888,35 +791,29 @@ p {
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.3s;
 }
-.abContent-rectorsCard:hover {
+.abContent-rectorsCard:hover{
 	box-shadow: 0 0 50px #2c6292;
 	transition: 0.3s;
 }
-
-.abContent-rectorsCard h2 {
-	text-align: center;
-	margin-top: 10px;
+.abContent-rectorsCard h2{
+	margin: 10px 0px 0px 0px;
 }
-.abContent-rectorsCard img {
-	border-radius: 5px;
-	margin-bottom: 20px;
-	margin-top: 20px;
+.abContent-rectorsCard img{
+	margin: 20px 0px 20px 0px;
 	width: 90%;
 }
-.abContent-rectorsCard p {
+.abContent-rectorsCard p{
 	width: 90%;
 	text-align: center;
 }
+/* =========================================== RECTORS END */
 /* ================================================ ABOUTUS-CONTENT END */
 
-
-
-
-.education-header {
+/* ACADEMIC-PAGES =================================================================================== */
+/* ACADEMIC-CONTENT START ============================================= */
+.education-header{
 	height: 70vh;
 	color: #fff;
-	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Banners/banner.webp');
-	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -941,7 +838,7 @@ p {
 	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Education/advanced.webp');
 	background-size: cover;
 }
-.education-container {
+.education-container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -950,14 +847,7 @@ p {
 	height: 60%;
 	width: 85%;
 }
-.education-container .title {
-	letter-spacing: -2px;
-	font-size: xxx-large;
-	margin-bottom: 6px;
-}
-
-
-.education-content {
+.education-content{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -966,8 +856,7 @@ p {
 	padding: 20px;
 	height: auto;
 }
-
-.education-contentCard {
+.education-contentCard{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -982,27 +871,21 @@ p {
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.3s;
 }
-.education-contentCard:hover {
+.education-contentCard:hover{
 	box-shadow: 0 0 50px #2c6292;
 	transition: 0.3s;
 }
-.education-contentCard a {
+.education-contentCard a{
 	text-decoration: none;
 }
-.education-contentCard h2 {
-	text-align: center;
-}
-.education-contentCard img {
-	border-radius: 5px;
-	margin-bottom: 10px;
-	margin-top: 20px;
+.education-contentCard img{
+	margin: 20px 0px 10px 0px;
 	width: 90%;
 }
+/* =============================================== ACADEMIC-CONTENT END */
 
-
-
-
-.facilities-header {
+/* FACILITIES-CONTENT START =========================================== */
+.facilities-header{
 	height: 70vh;
 	color: #fff;
 	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Banners/banner.webp');
@@ -1011,7 +894,7 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-.facilities-container {
+.facilities-container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1020,14 +903,7 @@ p {
 	height: 60%;
 	width: 85%;
 }
-.facilities-container .title {
-	letter-spacing: -2px;
-	font-size: xxx-large;
-	margin-bottom: 6px;
-}
-
-
-.facilities-content {
+.facilities-content{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -1036,8 +912,7 @@ p {
 	padding: 20px;
 	height: auto;
 }
-
-.facilities-contentCard {
+.facilities-contentCard{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1052,27 +927,21 @@ p {
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.3s;
 }
-.facilities-contentCard:hover {
+.facilities-contentCard:hover{
 	box-shadow: 0 0 50px #2c6292;
 	transition: 0.3s;
 }
-.facilities-contentCard a {
+.facilities-contentCard a{
 	text-decoration: none;
 }
-.facilities-contentCard h2 {
-	text-align: center;
-}
-.facilities-contentCard img {
-	border-radius: 5px;
-	margin-bottom: 10px;
-	margin-top: 20px;
+.facilities-contentCard img{
+	margin: 20px 0px 10px 0px;
 	width: 90%;
 }
+/* ============================================= FACILITIES-CONTENT END */
 
-
-
-
-.activities-header {
+/* ACTIVITIES-CONTENT START =========================================== */
+.activities-header{
 	height: 70vh;
 	color: #fff;
 	background: linear-gradient(#0e0e0ed0,#0e0e0ed0), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/Banners/banner.webp');
@@ -1081,7 +950,7 @@ p {
 	align-items: center;
 	justify-content: center;
 }
-.activities-container {
+.activities-container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1090,14 +959,7 @@ p {
 	height: 60%;
 	width: 85%;
 }
-.activities-container .title {
-	letter-spacing: -2px;
-	font-size: xxx-large;
-	margin-bottom: 6px;
-}
-
-
-.activities-content {
+.activities-content{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -1106,8 +968,7 @@ p {
 	padding: 20px;
 	height: auto;
 }
-
-.activities-contentCard {
+.activities-contentCard{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1122,19 +983,15 @@ p {
 	box-shadow: 0 0 50px #1e4466;
 	transition: 0.3s;
 }
-.activities-contentCard:hover {
+.activities-contentCard:hover{
 	box-shadow: 0 0 50px #2c6292;
 	transition: 0.3s;
 }
-.activities-contentCard a {
+.activities-contentCard a{
 	text-decoration: none;
 }
-.activities-contentCard h2 {
-	text-align: center;
-}
-.activities-contentCard img {
-	border-radius: 5px;
-	margin-bottom: 10px;
-	margin-top: 20px;
+.activities-contentCard img{
+	margin: 20px 0px 10px 0px;
 	width: 90%;
 }
+/* ACTIVITIES-CONTENT END ============================================= */

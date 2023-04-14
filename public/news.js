@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 htmlData += '<h2>' + data[i].title + '</h2>';
                 htmlData += '<span class="news-info-container">';
                 htmlData += '<div class="news-info">';
-                htmlData += '<h5><i class="fa-solid fa-clock"></i>' + data[i].time + '</h5>';
-                htmlData += '<h5><i class="fa-solid fa-calendar-days"></i>' + data[i].date + '</h5>';
+                htmlData += '<h3><i class="fa-solid fa-clock"></i>' + data[i].time + '</h3>';
+                htmlData += '<h3><i class="fa-solid fa-calendar-days"></i>' + data[i].date + '</h3>';
                 htmlData += '</div>';
                 htmlData += '</span>';
                 htmlData += '<span class="hr-container">';
