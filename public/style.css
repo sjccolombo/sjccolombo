@@ -1120,5 +1120,12 @@ hr{
 	.education-contentCard{
 		width: 80%;
 	}
+
+	.activities-header{
+		height: 50vh;
+	}
+	.activities-contentCard{
+		width: 80%;
+	}
 }
 /* ============================================================================ MOBILE-RESPONSIVE END */
