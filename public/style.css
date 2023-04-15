@@ -1038,7 +1038,7 @@ hr{
 		width: 100%;
 		background-color: #1e44666d;
 		backdrop-filter: blur(10px);
-		transition: 0.5s;
+		-webkit-backdrop-filter: blur(10px);
 	}
 	.nav-menu.show button {
 		margin: 10px 0;
@@ -1046,6 +1046,13 @@ hr{
 	.nav-menu.show .dropdown-content {
 		margin-left: 0;
 		display: contents;
+	}
+	.dropdown button{
+		width: 100%;
+	}
+	/* Prevent Scrolling of the Main When Menu Opened */
+	body.menu-open {
+		overflow: hidden;
 	}
 	/* HEADER START =================================================== */
 	.title{
