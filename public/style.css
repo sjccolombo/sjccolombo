@@ -1,6 +1,6 @@
 @font-face{
 	font-family: "Helvetica NDM";
-	src: url("https://github.com/sjccolombo/sjc-storage/blob/main/Fonts/HelveticaNowDisplay-Medium.ttf") format("truetype");
+	src: url("https://github.com/sjccolombo/sjc-storage/blob/main/Fonts/HelveticaNowDisplay-Medium.ttf?raw=true") format("truetype");
 }
 *{
 	margin: 0;
@@ -318,7 +318,7 @@ hr{
 	background-size: cover;
 }
 #london-advanced{
-	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('');
+	background: linear-gradient(#0e0e0e9f,#0e0e0e9f), url('https://raw.githubusercontent.com/sjccolombo/sjc-storage/main/Images/placeholder.webp');
 	background-size: cover;
 }
 .academics-card h2{
@@ -1000,6 +1000,9 @@ hr{
 
 /* MOBILE-RESPONSIVE START ========================================================================== */
 @media (max-width: 1000px) {
+	p{
+		line-height: 1.6;
+	}
 	/* NAVBAR START =================================================== */
 	.nav-menu {
 		display: none;
@@ -1077,9 +1080,17 @@ hr{
 	.academics-card{
 		width: 80%;
 	}
+	.education-contentCard img{
+		height: 200px;
+		object-fit: cover;
+	}
 	/* NEWS START ===================================================== */
 	.news-card{
 		width: 80%;
+	}
+	.news-card img{
+		height: 250px;
+		object-fit: cover;
 	}
 	.news-info{
 		flex-direction: column;
